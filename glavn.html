@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/pages/glavn.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Новая Жизнь | Главная страница</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <!-- Логотип -->
+        <div class="container">
+            <a href="glavn.html" class="logo"><img src="images/logo.png" alt="Логотип"><span class="logo-text">New Life</span></a>
+        <!-- Меню навигации -->
+        <nav>
+            <ul>
+                <li><a href="#" class="search"><i class="fas fa-search"></i> Поиск</a></li>
+                <li><a href="#" class="register"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+                <li><a href="#" class="profile"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                <li><a href="#" class="add"><i class="fas fa-plus-circle"></i> Добавить</a></li>
+                <li><a href="#" class="reviews"><i class="fas fa-comments"></i> Отзывы</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Здесь будет основное содержимое страницы -->
+        <section class="hero">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="swiper-slide"><img src="images/img/negr.jpg">
+                        <small>Негр</small> 
+                        <p>А негр нахуй может мне тут не сидеть и реп нахуй не исполнять.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
