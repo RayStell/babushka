@@ -32,6 +32,28 @@ a{
     gap: 16px;
 }
 
+.header nav ul li a, .header .logo-text {
+    background: linear-gradient(to right, 
+        #ff0000, /* красный */
+        #ff8000, /* оранжевый */
+        #ffff00, /* желтый */
+        #00ff00, /* зеленый */
+        #0000ff, /* синий */
+        #4b0082, /* индиго */
+        #9400d3  /* фиолетовый */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
 .header img{
     width: 65px;
     height: auto;
@@ -41,6 +63,9 @@ a{
 .hero {
     padding: 50px 0;
     background: #f8f9fa;
+    background-image: url('../../images/img/back-2.jpg');
+    background-size:1600px 600px;
+    background-repeat: no-repeat;
 }
 
 /* Стили для контейнера слайдера */
@@ -159,5 +184,106 @@ a{
         padding: 8px 20px;
         font-size: 14px;
     }
+}
+/* short-search */  
+.short-search {
+    padding: 96px 0;
+    background-image: url('../../images/img/back-1.jpg');
+    background-size: 1900px 800px;
+    background-repeat: no-repeat;
+}
+
+.short-search form {
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.short-search label {
+    margin-bottom: 10px; /* Отступ снизу */
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 16px; /* Увеличен размер шрифта */
+}
+
+.short-search select, .short-search button {
+    padding: 12px; /* Увеличены отступы внутри элементов */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 4px; /* Закругленные углы */
+    width: 100%; /* Ширина 100% для лучшего выравнивания */
+    max-width: 200px; /* Максимальная ширина */
+}
+
+.short-search button {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.short-search button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+/* facts */
+.facts {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.facts h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.facts h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #4CAF50;
+}
+
+.facts ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.facts li {
+    flex-basis: 300px;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.facts li:hover {
+    transform: translateY(-5px);
+}
+
+.facts i {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.facts h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
 }
 

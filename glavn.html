@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fonts Awesome-->
+    <link rel="stylesheet" href="library/css/font-awesome.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="styles/pages/glavn.css">
     <link rel="stylesheet" href="styles/settings.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Новая Жизнь | Главная страница</title>
 </head>
 <body>
@@ -20,11 +21,11 @@
         <!-- Меню навигации -->
         <nav>
             <ul>
-                <li><a href="#" class="search"><i class="fas fa-search"></i> Поиск</a></li>
-                <li><a href="#" class="register"><i class="fas fa-user-plus"></i> Регистрация</a></li>
-                <li><a href="#" class="profile"><i class="fas fa-user"></i> Личный кабинет</a></li>
-                <li><a href="#" class="add"><i class="fas fa-plus-circle"></i> Добавить</a></li>
-                <li><a href="#" class="reviews"><i class="fas fa-comments"></i> Отзывы</a></li>
+                <li><a href="#" class="search"><i class="fa fa-search"></i> Поиск</a></li>
+                <li><a href="#" class="register"><i class="fa fa-user-plus"></i> Регистрация</a></li>
+                <li><a href="#" class="profile"><i class="fa fa-user"></i> Личный кабинет</a></li>
+                <li><a href="#" class="add"><i class="fa fa-plus-circle"></i> Добавить</a></li>
+                <li><a href="#" class="reviews"><i class="fa fa-comments"></i> Отзывы</a></li>
             </ul>
         </nav>
     </div>
@@ -86,6 +87,38 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
+            </div>
+        </section>
+        <section class="short-search">
+            <form>
+                <label for="type-animal">Вид животного</label>
+                <select name="type-animal" id="type-animal">
+                    <option value="cat">Кот</option>
+                    <option value="dog">Собака</option>
+                    <option value="rabbit">Кролик</option>
+                    <option value="hamster">Хомяк</option>
+                    <option value="parrot">Попугай</option>
+                </select>
+                <button type="submit">Поиск</button>
+            </form>
+        </section>
+        <section class="facts">
+            <div class="container">
+                <h2>Интересные факты</h2>
+                <ul>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <h3>Помогли найти более 500 животных.</h3>
+                    </li>
+                    <li>
+                        <i class="fa fa-clock-o"></i>
+                        <h3>Более трех лет способствуем возвращению питомцев к хозяевам.</h3>
+                    </li>
+                    <li>
+                        <i class="fa fa-money"></i>
+                        <h3>Все услуги оказываются бесплатно.</h3>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
