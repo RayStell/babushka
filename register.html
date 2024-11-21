@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/pages/register.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <title>Новая Жизнь | Авторизация</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="glavn.html" class="header-link">На главную</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form class="register-form">
+                <h1 class="register-form-title">Регистрация</h1>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+                <label for="username">Имя</label>
+                <input type="text" id="username" placeholder="Имя">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" placeholder="Фамилия">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="Телефон">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password">
+                <label for="password-confirm">Подтверждение пароля</label>
+                <input type="password" id="password-confirm" name="password-confirm">
+                <div class="checkbox-wrapper">
+                    <label for="agree">Согласие на обработку персональных данных</label>
+                    <input type="checkbox" id="agree" name="agree">
+                </div>
+                <button type="submit">Регистрация</button>
+                <a href="login.html">Авторизация</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

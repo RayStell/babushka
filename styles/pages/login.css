@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+section {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form input {
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+}
+
+.header {
+    padding: 2rem 0;
+}
+
+.header a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        color: #007bff;
+        transform: translateX(-5px);
+    }
+
+    &::before {
+        content: '← ';
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 20px;
+    }
+    
+    form button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+.login-form-title {
+    background: linear-gradient(to right, 
+        #ff0000, /* красный */
+        #ff8000, /* оранжевый */
+        #ffff00, /* желтый */
+        #00ff00, /* зеленый */
+        #0000ff, /* синий */
+        #4b0082, /* индиго */
+        #9400d3  /* фиолетовый */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: rainbow 5s linear infinite;
+    font-size: 24px;
+    justify-self: center;
+    text-align: center;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.login-form a {
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.login-form a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background: linear-gradient(to right, 
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #9400d3
+    );
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.login-form a:hover {
+    color: #333;
+}
+
+.login-form a:hover::after {
+    width: 100%;
+}
