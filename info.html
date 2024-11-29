@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о животных</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/pages/info.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <a href="poisk.html">Поиск животного</a>
+    </header>
+    <main>
+        <div class="info_item">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/img/makak.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/avatar.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/pet-photo.jpeg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/img/makak.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img/avatar.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/img/pet-photo.jpeg" />
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="info_item">
+            <time datetime="29-11-2024">29.11.2024</time>
+            <h2>Кот</h2>
+            <p>
+                Кировский р-н
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid cum mollitia, at eligendi animi reprehenderit illum natus repellat tempore quaerat velit sint veritatis et dolorem odio dicta vero sequi!
+            </p>
+            <p>Иванов Иван</p>
+            <a href="tel:89231898840">8 (923) 189 88-40</a>
+            <a href="mailto:example@mail.ru">example@mail.ru</a>
+        </div>
+    </main>
+
+        <!-- Слайдер Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Инициализация Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
+</body>
+</html>

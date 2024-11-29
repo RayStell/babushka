@@ -1,0 +1,181 @@
+/* Базовые стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+header {
+    padding: 32px 0;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Секция фильтров */
+.filter {
+    padding: 48px 0;
+    background-color: #f5f6fa;
+}
+
+.filter form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter label {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.filter input[type="date"],
+.filter select {
+    padding: 10px 16px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.filter input[type="date"]:focus,
+.filter select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.filter button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+    background-color: #2980b9;
+}
+
+/* Секция с карточками */
+.items {
+    padding: 48px 0;
+    background-color: #f8f9fa;
+    
+}
+
+.items .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.items-content {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(33.333% - 14px);
+}
+
+.items-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.items-date {
+    font-size: 14px;
+    color: #666;
+    margin-left: 15px;
+}
+
+.items-pet {
+    margin: 15px 0;
+}
+
+.pet-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.items-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin: 15px 0 0;
+}
+
+.items h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+.items h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #9400d3
+    );
+    border-radius: 2px;
+    animation: rainbow 5s linear infinite;
+    background-size: 200% auto;
+}
+
+.items h2:hover::after {
+    width: 150px;
+    transition: width 0.3s ease;
+}
