@@ -210,3 +210,59 @@ section {
     0% { background-position: 0% center; }
     100% { background-position: 200% center; }
 }
+
+/* ПК */
+@media (max-width: 1399.98px) {
+    .register-form {
+        max-width: 450px;
+    }
+}
+
+/* Ноутбук */
+@media (max-width: 1199.98px) {
+    .register-form-title {
+        font-size: 26px;
+    }
+    
+    .register-form input:not([type="checkbox"]) {
+        padding: 10px 14px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    section {
+        width: 95%;
+    }
+    
+    .register-form {
+        padding: 30px;
+    }
+}
+
+/* Телефон (вертикальный) */
+@media (max-width: 767.98px) {
+    .register-form-title {
+        font-size: 22px;
+    }
+    
+    .register-form button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Телефон (горизонтальный) */
+@media (max-width: 575.98px) {
+    .register-form {
+        padding: 20px;
+    }
+    
+    .checkbox-wrapper label {
+        font-size: 12px;
+    }
+    
+    .register-form input:not([type="checkbox"]) {
+        font-size: 14px;
+    }
+}

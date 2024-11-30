@@ -179,3 +179,56 @@ header a:hover {
     width: 150px;
     transition: width 0.3s ease;
 }
+
+/* ПК */
+@media (max-width: 1399.98px) {
+    .items-content {
+        max-width: calc(50% - 14px);
+    }
+}
+
+/* Ноутбук */
+@media (max-width: 1199.98px) {
+    .filter form {
+        gap: 15px;
+    }
+    
+    .items-content {
+        min-width: 280px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    .items-content {
+        max-width: 100%;
+    }
+    
+    .pet-photo {
+        height: 250px;
+    }
+}
+
+/* Телефон (вертикальный) */
+@media (max-width: 767.98px) {
+    .filter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .items h2 {
+        font-size: 32px;
+    }
+}
+
+/* Телефон (горизонтальный) */
+@media (max-width: 575.98px) {
+    .items-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pet-photo {
+        height: 200px;
+    }
+}

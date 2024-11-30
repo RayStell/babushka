@@ -270,4 +270,71 @@ header a {
     }
 }
 
+/* ПК */
+@media (max-width: 1399.98px) {
+    .info .container {
+        max-width: 700px;
+    }
+    
+    .hero ul {
+        gap: 25px;
+    }
+}
+
+/* Ноутбук */
+@media (max-width: 1199.98px) {
+    .hero li img {
+        height: 180px;
+    }
+    
+    .info li {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    .info .container {
+        padding: 30px;
+        gap: 24px;
+    }
+    
+    .hero ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Телефон (вертикальный) */
+@media (max-width: 767.98px) {
+    .hero ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+/* Телефон (горизонтальный) */
+@media (max-width: 575.98px) {
+    .info .container {
+        padding: 20px;
+    }
+    
+    .hero li img {
+        height: 160px;
+    }
+    
+    .info li {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
 

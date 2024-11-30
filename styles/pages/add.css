@@ -147,3 +147,47 @@ button[type="submit"]:disabled {
     transform: none;
     box-shadow: none;
 }
+
+/* ПК */
+@media (max-width: 1399.98px) {
+    .add .container {
+        max-width: 450px;
+    }
+}
+
+/* Ноутбук */
+@media (max-width: 1199.98px) {
+    form {
+        gap: 12px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    .add .container {
+        padding: 24px;
+    }
+}
+
+/* Телефон (вертикальный) */
+@media (max-width: 767.98px) {
+    input, select, textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button[type="submit"] {
+        padding: 12px 20px;
+    }
+}
+
+/* Телефон (горизонтальный) */
+@media (max-width: 575.98px) {
+    .add .container {
+        padding: 16px;
+    }
+    
+    label[for="agree"] {
+        font-size: 12px;
+    }
+}

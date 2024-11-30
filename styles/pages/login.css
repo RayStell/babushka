@@ -168,3 +168,55 @@ form button:hover {
 .login-form a:hover::after {
     width: 100%;
 }
+
+/* ПК */
+@media (max-width: 1399.98px) {
+    .login-form {
+        max-width: 450px;
+    }
+}
+
+/* Ноутбук */
+@media (max-width: 1199.98px) {
+    .login-form-title {
+        font-size: 26px;
+    }
+    
+    form input {
+        padding: 10px 14px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    section {
+        width: 95%;
+    }
+    
+    .login-form {
+        padding: 30px;
+    }
+}
+
+/* Телефон (вертикальный) */
+@media (max-width: 767.98px) {
+    .login-form-title {
+        font-size: 22px;
+    }
+    
+    form button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Телефон (горизонтальный) */
+@media (max-width: 575.98px) {
+    .login-form {
+        padding: 20px;
+    }
+    
+    form input {
+        font-size: 14px;
+    }
+}
